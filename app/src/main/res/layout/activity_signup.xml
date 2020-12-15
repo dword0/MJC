@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.SignupActivity">
+
+    <EditText
+        android:id="@+id/tvSignupName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_text_field_default"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/field_bg_blue"
+        android:gravity="center_vertical"
+        android:hint="@string/text_name"
+        android:inputType="text"
+        android:padding="@dimen/padding_text_view"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvSignupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_text_field_default"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/field_bg_blue"
+        android:gravity="center_vertical"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/padding_text_view"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignupName" />
+
+    <EditText
+        android:id="@+id/tvSignupPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_text_field_default"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/field_bg_blue"
+        android:gravity="center_vertical"
+        android:hint="@string/text_phone"
+        android:inputType="phone"
+        android:padding="@dimen/padding_text_view"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignupEmail" />
+
+    <EditText
+        android:id="@+id/tvSignupPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_text_field_default"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/field_bg_blue"
+        android:gravity="center_vertical"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/padding_text_view"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignupPhone" />
+
+    <TextView
+        android:id="@+id/btSignup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button_default"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/button_bg_blue"
+        android:gravity="center"
+        android:text="@string/text_signup"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignupPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:progressTint="@color/mjc_blue"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignupPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
